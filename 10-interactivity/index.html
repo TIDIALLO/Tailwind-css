@@ -1,34 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Interactivity</title>
-  </head>
-  <body>
-    <!-- Hover State Styling -->
 
-    <!-- Focus State Styling -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Interactivity</title>
+</head>
 
-    <!-- Active State Styling -->
+<body>
+  <!-- Hover State Styling -->
+  <button class="bg-black text-white py-3 px-5 rounded-lg m-3
+     hover:bg-orange-500  hover:text-white">
+    Submit</button>
 
-    <!-- Styling based on parent state -->
+  <!-- Focus State Styling -->
+  <button class="bg-black text-white py-3 px-5 rounded-lg m-3
+     focus:bg-green-500  focus:text-white">
+    Submit</button>
 
-    <!-- Pseudo Classes -->
+  <!-- Active State Styling -->
+  <button class="bg-black text-white py-3 px-5 rounded-lg m-3
+     active:bg-yellow-300  active:text-white">
+    Submit</button>
 
-    <!-- Appearance -->
-    <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+  <!-- Styling based on parent state -->
+  <button>
+    <a href="" class="group block max-w-xs mx-auto rounded-lg p-6 bg-white 
+            shadow-lg space-y-3 hover:bg-sky-500">
+      <h3 class="group-hover:text-white">This is the card title</h3>
+      <p class="group-hover:text-white">this is the card text</p>
+    </a>
+  </button>
 
-    <!-- Cursor -->
+  <!-- Pseudo Classes -->
+  <ul>
+    <li class="first:bg-red-200 even:bg-orange-200 odd:bg-green-500">Item 1</li>
+    <li class="first:bg-red-200 even:bg-orange-200 odd:bg-green-500">Item 2</li>
+    <li class="first:bg-red-200 even:bg-orange-200 odd:bg-green-500">Item 3</li>
+    <li class="first:bg-red-200 even:bg-orange-200 odd:bg-green-500">Item 4</li>
+    <li class="first:bg-red-200 even:bg-orange-200 odd:bg-green-500">Item 5</li>
+    <li class="first:bg-red-200 even:bg-orange-200 odd:bg-green-500">Item 6</li>
+    <li class="first:bg-red-200 even:bg-orange-200 odd:bg-green-500">Item 7</li>
+  </ul>
 
-    <!-- Resize -->
+  <!-- Appearance -->
+  <select class="appearance-none" name="" id="">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+  <br>
 
-    <!-- User Select -->
+  <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+  <button class="bg-black text-white py-3 px-5 rounded-lg-3 m-3 cursor-not-allowed">
+    Submit
+  </button>
 
-    <!-- Smooth Scroll Example -->
-  </body>
+  <!-- Cursor -->
+
+  <!-- Resize -->
+
+  <!-- User Select -->
+  <div class="select-none">Lorem ipsum dolor sit amet.</div>
+  <div class="select-all">Lorem ipsum dolor sit amet.</div>
+  <div class="select-auto">Lorem ipsum dolor sit amet.</div>
+  <div class="select-none">Lorem ipsum dolor sit amet.</div>
+
+  <!-- Smooth Scroll Example -->
+</body>
+
 </html>
 
 <!-- Cursor
